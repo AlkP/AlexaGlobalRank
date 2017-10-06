@@ -1,0 +1,11 @@
+%table.table.table-striped
+  %thead
+    %tr
+      %th rank
+      %th site
+  %tbody.tbody-groups
+    - @results.each do |name, value|
+      %tr
+        %td=value
+        %td=name
+
